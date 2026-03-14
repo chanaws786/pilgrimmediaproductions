@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Pilgrim Media Productions</title>
+  <meta name="description" content="Blog and project case studies from Pilgrim Media Productions — web design, print, photography, and video production work from our studio." />
+  <title>Blog &amp; Projects - Pilgrim Media Productions</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <div class="reading-progress" role="progressbar" aria-hidden="true"></div>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-icon">&#9673;</span>
-        <span class="logo-text">Pilgrim Media<br /><small>Productions</small></span>
+        <div class="logo-mark">P</div>
+        <div class="logo-text">Pilgrim Media<small>Productions</small></div>
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -25,6 +32,8 @@
             <ul class="dropdown">
               <li><a href="products.html#web-design">Web Design</a></li>
               <li><a href="products.html#print-design">Print Design</a></li>
+              <li><a href="products.html#photography">Photography</a></li>
+              <li><a href="products.html#video">Video Production</a></li>
             </ul>
           </li>
           <li><a href="about.html">About</a></li>
@@ -32,13 +41,13 @@
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="store.html">Store</a></li>
           <li>
-            <a href="https://www.instagram.com/pilgrimmediaproductions" target="_blank" rel="noopener" class="nav-social">
+            <a href="https://www.instagram.com/pilgrimmediaproductions" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
           </li>
         </ul>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -48,6 +57,7 @@
     <div class="container">
       <p class="section-eyebrow">Latest Updates</p>
       <h1>Blog &amp; Projects</h1>
+      <p class="page-hero-desc">Case studies, updates, and insights from our studio — documenting the work we love doing.</p>
     </div>
   </section>
 
@@ -61,8 +71,9 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">November 2024</span>
               <span class="blog-cat">Web Design</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">November 2024</span>
             </div>
             <h2><a href="#">London Harley Street Practice</a></h2>
             <p>We designed and built a refined, professional website for a leading medical practice on London's prestigious Harley Street. The site needed to convey trust, expertise, and accessibility — perfectly suited to their patient-facing brand.</p>
@@ -76,11 +87,12 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">October 2024</span>
               <span class="blog-cat">Technology</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">October 2024</span>
             </div>
             <h3><a href="#">Google Sheets &amp; Prayer Timetables</a></h3>
-            <p>A clever integration that uses Google Sheets as a simple database to automatically generate and display Islamic prayer timetables on websites — no complex backend needed.</p>
+            <p>A clever integration using Google Sheets as a simple database to automatically generate and display Islamic prayer timetables — no complex backend needed.</p>
             <a href="#" class="card-link">Read more &rarr;</a>
           </div>
         </article>
@@ -91,11 +103,12 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">September 2024</span>
               <span class="blog-cat">Digital Signage</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">September 2024</span>
             </div>
             <h3><a href="#">Mosque TV Prayer Clock</a></h3>
-            <p>We created a dedicated TV display solution for mosques to show daily prayer times beautifully on any screen — helping communities stay informed in a visually appealing way.</p>
+            <p>We created a dedicated TV display solution for mosques to show daily prayer times beautifully on any screen — helping communities stay informed visually.</p>
             <a href="#" class="card-link">Read more &rarr;</a>
           </div>
         </article>
@@ -106,8 +119,9 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">August 2024</span>
               <span class="blog-cat">Web Design</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">August 2024</span>
             </div>
             <h3><a href="#">Website for Purley Masjid</a></h3>
             <p>A complete website design and build for Purley Masjid, serving the local Muslim community with prayer times, news, events, and donation functionality.</p>
@@ -121,8 +135,9 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">July 2024</span>
               <span class="blog-cat">Print Design</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">July 2024</span>
             </div>
             <h3><a href="#">Charity Event Branding</a></h3>
             <p>Complete print branding for a charity fundraising event — including posters, programmes, banners, and social media assets — all delivered on time and on budget.</p>
@@ -136,8 +151,9 @@
           </div>
           <div class="blog-info">
             <div class="blog-meta">
-              <span class="blog-date">June 2024</span>
               <span class="blog-cat">Photography</span>
+              <span class="blog-meta-sep"></span>
+              <span class="blog-date">June 2024</span>
             </div>
             <h3><a href="#">Commercial Photography for Local Business</a></h3>
             <p>A full commercial photography shoot for a local business, delivering high-quality images for use across their website, social media channels, and printed materials.</p>
@@ -153,10 +169,15 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo logo-light">
-          <span class="logo-icon">&#9673;</span>
-          <span class="logo-text">Pilgrim Media<br /><small>Productions</small></span>
+          <div class="logo-mark">P</div>
+          <div class="logo-text">Pilgrim Media<small>Productions</small></div>
         </a>
         <p>Professional design studio helping businesses and non-profits build a powerful online and offline presence.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/pilgrimmediaproductions" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
       </div>
       <div class="footer-nav">
         <h4>Quick Links</h4>
@@ -169,23 +190,32 @@
           <li><a href="store.html">Store</a></li>
         </ul>
       </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="products.html#web-design">Web Design</a></li>
+          <li><a href="products.html#print-design">Print Design</a></li>
+          <li><a href="products.html#photography">Photography</a></li>
+          <li><a href="products.html#video">Video Production</a></li>
+        </ul>
+      </div>
       <div class="footer-contact">
         <h4>Contact</h4>
         <ul class="contact-list">
           <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <a href="tel:07846430556">07846 430556</a>
           </li>
           <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:info@pilgrimmediaproductions.com">info@pilgrimmediaproductions.com</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:pilgrimmediaproductions@gmail.com">pilgrimmediaproductions@gmail.com</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2024 Pilgrim Media Productions. All rights reserved.</p>
+        <p>&copy; 2025 Pilgrim Media Productions. All rights reserved.</p>
       </div>
     </div>
   </footer>
