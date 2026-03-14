@@ -20,8 +20,8 @@
   --clr-text-lt:   #5a5a72;
   --clr-accent:    #7c5cbf;
 
-  --ff-serif: 'Playfair Display', Georgia, serif;
-  --ff-sans:  'Inter', system-ui, sans-serif;
+  --ff-serif: 'Arvo', Georgia, serif;
+  --ff-sans:  'Gantari', system-ui, sans-serif;
 
   --max-w:      1200px;
   --radius:     10px;
@@ -253,43 +253,28 @@ p  { color: var(--clr-text-lt); }
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  color: var(--clr-white);
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.logo-mark {
-  width: 38px;
-  height: 38px;
-  background: var(--clr-gold);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-serif);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--clr-dark);
-  flex-shrink: 0;
-  box-shadow: 0 2px 12px rgba(201,168,76,0.4);
+.logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  /* Tint: default white works on dark header */
+  filter: brightness(1);
+  transition: opacity var(--transition);
 }
 
-.logo-text {
-  font-family: var(--ff-serif);
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--clr-white);
-  line-height: 1.25;
+.logo:hover .logo-img {
+  opacity: 0.85;
 }
-.logo-text small {
-  display: block;
-  font-size: 0.68rem;
-  font-family: var(--ff-sans);
-  font-weight: 500;
-  color: var(--clr-gold);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+
+/* Gold-tinted version for light backgrounds */
+.logo-gold .logo-img {
+  filter: brightness(0) saturate(100%)
+          invert(75%) sepia(50%) saturate(500%)
+          hue-rotate(5deg) brightness(95%) contrast(90%);
 }
 
 /* Nav */
