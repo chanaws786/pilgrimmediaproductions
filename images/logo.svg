@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 120" role="img" aria-label="Pilgrim Media Productions">
+
+  <!-- ═══ FILM CAMERA ICON ═══ -->
+  <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Film reels (top) -->
+    <circle cx="30" cy="22" r="16" stroke-width="2.2"/>
+    <circle cx="30" cy="22" r="6"  stroke-width="1.6"/>
+    <!-- reel spokes -->
+    <line x1="30" y1="10" x2="30" y2="16" stroke-width="1.4"/>
+    <line x1="30" y1="28" x2="30" y2="34" stroke-width="1.4"/>
+    <line x1="18" y1="22" x2="24" y2="22" stroke-width="1.4"/>
+    <line x1="36" y1="22" x2="42" y2="22" stroke-width="1.4"/>
+
+    <circle cx="70" cy="22" r="16" stroke-width="2.2"/>
+    <circle cx="70" cy="22" r="6"  stroke-width="1.6"/>
+    <!-- reel spokes -->
+    <line x1="70" y1="10" x2="70" y2="16" stroke-width="1.4"/>
+    <line x1="70" y1="28" x2="70" y2="34" stroke-width="1.4"/>
+    <line x1="58" y1="22" x2="64" y2="22" stroke-width="1.4"/>
+    <line x1="76" y1="22" x2="82" y2="22" stroke-width="1.4"/>
+
+    <!-- Camera body -->
+    <rect x="8" y="36" width="84" height="72" rx="5" stroke-width="2.4"/>
+
+    <!-- Lens (main) -->
+    <circle cx="50" cy="74" r="22" stroke-width="2.2"/>
+    <circle cx="50" cy="74" r="14" stroke-width="1.6"/>
+    <circle cx="50" cy="74" r="6"  stroke-width="1.4"/>
+
+    <!-- Viewfinder (top-left of body) -->
+    <rect x="14" y="43" width="22" height="16" rx="2" stroke-width="1.6"/>
+
+    <!-- Film strip notches on body sides -->
+    <rect x="4"  y="50" width="4" height="8" rx="1" stroke-width="1.4"/>
+    <rect x="4"  y="64" width="4" height="8" rx="1" stroke-width="1.4"/>
+    <rect x="92" y="50" width="4" height="8" rx="1" stroke-width="1.4"/>
+    <rect x="92" y="64" width="4" height="8" rx="1" stroke-width="1.4"/>
+
+  </g>
+
+  <!-- ═══ LOGOTYPE TEXT (outline/hollow style) ═══ -->
+  <g fill="none" stroke="white" stroke-width="1.0" font-family="'Arvo', Georgia, serif" font-weight="700" letter-spacing="4">
+    <text x="114" y="66"  font-size="40">PILGRIM MEDIA</text>
+    <text x="114" y="110" font-size="40">PRODUCTIONS</text>
+  </g>
+
+</svg>
