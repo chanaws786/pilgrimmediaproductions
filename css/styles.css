@@ -24,9 +24,9 @@
   --ff-sans:  'Gantari', system-ui, sans-serif;
 
   --max-w:      1200px;
-  --radius:     10px;
-  --radius-lg:  18px;
-  --radius-xl:  28px;
+  --radius:     0px;
+  --radius-lg:  0px;
+  --radius-xl:  0px;
   --shadow:     0 4px 24px rgba(0,0,0,.07);
   --shadow-md:  0 8px 32px rgba(0,0,0,.10);
   --shadow-lg:  0 16px 56px rgba(0,0,0,.16);
@@ -2140,4 +2140,64 @@ p  { color: var(--clr-text-lt); }
   .process-steps { grid-template-columns: 1fr; }
   .hero-stats { flex-wrap: wrap; gap: 16px; }
   h1 { font-size: 2rem; }
+}
+
+/* ── Hard Edge Override — zero all border-radius ── */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+/* Keep the back-to-top square with a solid border instead of a circle */
+.back-to-top {
+  box-shadow: 3px 3px 0 var(--clr-dark) !important;
+}
+.back-to-top:hover {
+  box-shadow: 5px 5px 0 var(--clr-dark) !important;
+  transform: translate(-2px, -2px) !important;
+}
+
+/* Square social links */
+.social-links a {
+  border: 2px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Hero badge as a sharp pill-less tag */
+.hero-badge {
+  border: 1px solid rgba(60,188,247,0.4) !important;
+  padding: 6px 14px !important;
+}
+
+/* Hero scroll indicator — rectangular */
+.hero-scroll-indicator span {
+  border: 2px solid rgba(255,255,255,0.25) !important;
+}
+
+/* Card hover lifts — keep translate but no radius */
+.service-card:hover,
+.project-card:hover,
+.blog-card:hover,
+.store-card:hover,
+.value-item:hover,
+.why-point:hover,
+.testimonial-card:hover,
+.contact-item:hover {
+  transform: translateY(-4px) !important;
+}
+
+/* Sharp tag labels */
+.project-tag,
+.blog-tag {
+  background: var(--clr-gold) !important;
+  color: var(--clr-dark) !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Store featured badge */
+.featured-card::after {
+  background: var(--clr-gold) !important;
+  color: var(--clr-dark) !important;
 }
