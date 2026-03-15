@@ -2065,12 +2065,14 @@ p  { color: var(--clr-text-lt); }
 
   .dropdown {
     position: static;
-    display: flex !important;
+    display: none;
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 4px 0 10px;
   }
+
+  .dropdown.open { display: flex; }
 
   .dropdown li a {
     font-size: 0.9rem;

@@ -193,6 +193,35 @@ function handleContactSubmit(e) {
   }, 900);
 }
 
+/* ── Dropdown: toggle on click (mobile) + close on outside click (desktop) ── */
+(function () {
+  var hasDropdowns = document.querySelectorAll('.has-dropdown');
+  if (!hasDropdowns.length) return;
+
+  hasDropdowns.forEach(function (item) {
+    var toggle = item.querySelector('a');
+    var dropdown = item.querySelector('.dropdown');
+    if (!toggle || !dropdown) return;
+
+    toggle.addEventListener('click', function (e) {
+      // Only intercept on mobile (hamburger visible)
+      var hamburger = document.getElementById('hamburger');
+      if (!hamburger || getComputedStyle(hamburger).display === 'none') return;
+      e.preventDefault();
+      dropdown.classList.toggle('open');
+    });
+  });
+
+  // Close all dropdowns when clicking outside on desktop
+  document.addEventListener('click', function (e) {
+    hasDropdowns.forEach(function (item) {
+      if (!item.contains(e.target)) {
+        item.querySelector('.dropdown').classList.remove('open');
+      }
+    });
+  });
+}());
+
 /* ── Smooth anchor scrolling ── */
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
