@@ -223,23 +223,9 @@ p  { color: var(--clr-text-lt); }
 
 /* ── Header ── */
 .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  background: rgba(4,7,15,0.88);
-  backdrop-filter: blur(18px) saturate(180%);
-  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  position: relative;
+  background: rgba(4,7,15,1);
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.site-header.scrolled {
-  background: rgba(4,7,15,0.97);
-  box-shadow: 0 4px 32px rgba(0,0,0,0.35);
-}
-
-.site-header.hidden {
-  transform: translateY(-100%);
 }
 
 .header-inner {
@@ -444,7 +430,6 @@ p  { color: var(--clr-text-lt); }
   position: relative;
   z-index: 2;
   max-width: 720px;
-  padding-top: 80px;
 }
 
 .hero-badge {
@@ -1239,7 +1224,7 @@ p  { color: var(--clr-text-lt); }
 /* ── Page Hero (inner pages) ── */
 .page-hero {
   background: linear-gradient(145deg, #04070f 0%, #0a1428 50%, #0a1830 100%);
-  padding: 148px 0 80px;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }

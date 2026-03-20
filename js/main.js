@@ -14,28 +14,6 @@
   }, { passive: true });
 }());
 
-/* ── Smart Sticky Header (hide on scroll down, show on scroll up) ── */
-(function () {
-  var header   = document.querySelector('.site-header');
-  if (!header) return;
-  var lastY    = 0;
-  var delta    = 8;
-
-  window.addEventListener('scroll', function () {
-    var currentY = window.scrollY;
-
-    if (currentY < 100) {
-      header.classList.remove('hidden', 'scrolled');
-    } else if (currentY > lastY + delta) {
-      header.classList.add('hidden');
-    } else if (currentY < lastY - delta) {
-      header.classList.remove('hidden');
-      header.classList.add('scrolled');
-    }
-    lastY = currentY;
-  }, { passive: true });
-}());
-
 /* ── Mobile nav toggle ── */
 (function () {
   var hamburger = document.getElementById('hamburger');
